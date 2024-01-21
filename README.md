@@ -30,19 +30,19 @@ This Laravel project is a simple proof of concept demonstrating the usage of dep
    composer install
    ```
 
-2. Copy the `.env.example` file to `.env` and configure your database settings.
+2. Copy the `.env.example` file to `.env` and configure your database settings (OPTIONAL for just the demo api route).
 
    ```bash
    cp .env.example .env
    ```
 
-3. Generate the application key:
+3. Generate the application key (OPTIONAL for just the demo api route):
 
    ```bash
    php artisan key:generate
    ```
 
-4. Run the migrations:
+4. Run the migrations (OPTIONAL for just the demo api route):
 
    ```bash
    php artisan migrate
@@ -68,4 +68,3 @@ This Laravel project is a simple proof of concept demonstrating the usage of dep
 - **`app/Providers/AppServiceProvider.php`**: Registers the service in the Laravel service container.
 - **`routes/web.php`**: Defines the route for the proof-of-concept.
 
-Feel free to explore and modify the code to understand how dependency injection works in Laravel!
