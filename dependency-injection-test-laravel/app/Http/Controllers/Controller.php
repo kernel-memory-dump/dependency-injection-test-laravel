@@ -15,7 +15,7 @@ class Controller extends BaseController
     public function __construct(private IDemoService $demoService) {}
     
 
-    public function demoService(Request $request) {
+    public function testDemoService(Request $request) {
         $testVal = $this->demoService->demoMethod();
         return  response()->json(['data' => $testVal], 200);
     }
